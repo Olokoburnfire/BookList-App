@@ -11,6 +11,10 @@ body{
     background: rgba(255, 255, 255, 0.7);
 }
 
+a{
+    text-decoration: none;
+}
+
 div.container{
     width: 100vw;
     min-height: 100vh;
@@ -63,24 +67,16 @@ header .title{
 
 #book-form .submit-btn{
     width: 100%;
-    background: #fff;
-    color: rgba(122, 0, 0, 1);
-    border: 1.2px solid rgba(122, 0, 0, 1);
+    border: none;
+    cursor: pointer;
+    background-color: rgba(122, 0, 0, 1);
+    color: rgb(187, 187, 187);
     border-radius: 5px;
     font-size: 1rem;
     font-weight: 600;
     padding: 10px;
     outline: none;
 }
-
-.submit-btn:hover
-{
-    border: none;
-    cursor: pointer;
-    background-color: rgba(122, 0, 0, 1);
-    color: rgb(187, 187, 187);
-}
-
 
 /* table styles */
 
@@ -92,4 +88,48 @@ header .title{
 
 thead{
     box-shadow: 0 2px 2px 1px rgb(187, 187, 187);
+    font-size: 1.25rem;
+    font-weight: 700;
+    height: 50px;
+    text-align: start;
+}
+thead > tr{
+    text-align: start;
+}
+
+tbody tr{
+    height: 50px;
+    color: rgb(56, 56, 56);
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+
+.alert{
+    width: 100%;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.alert-danger{
+    background-color: #d30000;
+}
+
+.alert-success{
+    background: rgb(30, 150, 56);
+}
+
+.alert-successful{
+    background: rgb(43, 117, 59);
+}
+
+
+.del-btn{
+    background: #d30000;
+    color: #fff;
+    padding: 5px 10px;
 }
